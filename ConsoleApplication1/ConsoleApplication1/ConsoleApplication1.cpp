@@ -16,12 +16,21 @@ int main()
     const int N = 3;
     int a[N];
     cout << "\n элементы массива \n";
+    
+    int min1;
     for (int i = 0; i <= N-1; i++)
     {
         cout << "\n Введите a" << i<<"\n";
         cin >> a[i];
+
+        if (a[i]<=min1)
+         min1= a[i];
+
         //cout << a[i];
     }
+    cout << "Минимальный элемент массива " << min1 << "\n";
+
+
 
     pr = 1;
     for (int i = 0; i <= P - 1; i++)

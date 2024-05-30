@@ -1,2 +1,5 @@
-﻿  unit1.cpp
-  ConsoleApplication1.vcxproj -> C:\Users\user1\Documents\GitHub\hEc\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+﻿  ConsoleApplication1.cpp
+  unit1.cpp
+  Создание кода...
+  LINK : не найден или не выполнена сборка C:\Users\user1\source\repos\hEc\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe при последней инкрементной компоновке; выполняется полная компоновка
+  ConsoleApplication1.vcxproj -> C:\Users\user1\source\repos\hEc\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

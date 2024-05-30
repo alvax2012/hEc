@@ -1,2 +1,2 @@
-﻿  ConsoleApplication1.cpp
-C:\Users\user1\Documents\GitHub\hEc\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(26,1): error C4700: использована неинициализированная локальная переменная "min1"
+﻿  unit1.cpp
+  ConsoleApplication1.vcxproj -> C:\Users\user1\Documents\GitHub\hEc\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

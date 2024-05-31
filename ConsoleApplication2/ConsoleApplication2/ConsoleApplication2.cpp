@@ -8,8 +8,7 @@ int main()
 {
     setlocale(LC_ALL, "rus");
     cout << "\n Введите длину массива "; cin >> N;
-    /*int *a;
-    a=new int[N] ;*/
+
     int* a = new int[N];
     // Ввод элементов массива
     for (int i = 0; i <= N - 1; i++)

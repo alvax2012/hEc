@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 C:\Users\user1\Documents\GitHub\hEc\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp;C:\Users\user1\Documents\GitHub\hEc\ConsoleApplication1\ConsoleApplication1\x64\Debug\ConsoleApplication1.obj
 C:\Users\user1\Documents\GitHub\hEc\ConsoleApplication1\ConsoleApplication1\unit1.cpp;C:\Users\user1\Documents\GitHub\hEc\ConsoleApplication1\ConsoleApplication1\x64\Debug\unit1.obj
+=======
+C:\Users\user1\source\repos\hEc\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp;C:\Users\user1\source\repos\hEc\ConsoleApplication1\ConsoleApplication1\x64\Debug\ConsoleApplication1.obj
+C:\Users\user1\source\repos\hEc\ConsoleApplication1\ConsoleApplication1\const.cpp;C:\Users\user1\source\repos\hEc\ConsoleApplication1\ConsoleApplication1\x64\Debug\const.obj
+C:\Users\user1\source\repos\hEc\ConsoleApplication1\ConsoleApplication1\unit1.cpp;C:\Users\user1\source\repos\hEc\ConsoleApplication1\ConsoleApplication1\x64\Debug\unit1.obj
+>>>>>>> d4694548f6d6be4b731cc50ad51990bba5b43d54

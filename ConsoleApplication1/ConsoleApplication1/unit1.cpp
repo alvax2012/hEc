@@ -1,14 +1,13 @@
 #include <iostream> 
 #include "unit1.h"
-
+#include "const.h"
 
 using namespace std;
 
 //Функция находит минимальный элемент массива
 int minArr(int a[], int n)
 {
-    int min;
-    min = a[0];
+    int min=a[0];
     for (int i = 0; i <= n - 1; i++)
     {
         if (a[i] < min)
@@ -19,14 +18,12 @@ int minArr(int a[], int n)
     return min;
 }
 //Функция находит произведение нечетных чисел и минимальн. элемент массива. И меняет значение минимальн. элемента на произв. нечетн. чисел.
-void prArr(int a[], int n)
+//void prArr(int a[], int n)
+void prArr(int(&a)[constants::N], int n)
 {
-    int m;
-    int min;
-    int pr;
-    m = 0;
-    min = a[0];
-    pr = 1;
+    int m=0;
+    int min=a[0];
+    int pr=1;
     for (int i = 0; i <= n - 1; i++)
     {
         if (a[i] < min)
@@ -47,8 +44,7 @@ void prArr(int a[], int n)
 //Функция находит сумму K последних элементов массива
 int sumArr(int a[], int n, int k)
 {
-    int s;
-    s = 0;
+    int s=0;
     for (int i = n - k; i <= n - 1; i++)
     {
         s = s + a[i];
@@ -58,8 +54,7 @@ int sumArr(int a[], int n, int k)
 //Функция находит произведение первых P элементов массива
 int prfArr(int a[], int n, int p)
 {
-    int pr;
-    pr = 1;
+    int pr=1;
     for (int i = 0; i <= p - 1; i++)
     {
         pr = pr * a[i];

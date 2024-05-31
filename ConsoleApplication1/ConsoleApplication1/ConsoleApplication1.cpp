@@ -1,30 +1,27 @@
 ﻿#include<iostream>
 #include "unit1.h"
+#include "const.h"
 
 using namespace std;
-int N, P, K, pr, s;
+int P, K, pr, s;
 
 int main()
-{
-    setlocale(LC_ALL, "rus");
-
-    
-    const int N = 4;
+{    setlocale(LC_ALL, "rus");
    
-    int a[N];
+    int a[constants::N];
     // Ввод элементов массива
-    for (int i = 0; i <= N-1; i++)
+    for (int i = 0; i <= constants::N -1; i++)
     {
         cout << "\n Введите a" << i<<"\n";
         cin >> a[i];
     }
-    cout << "Минимальный элемент массива= " << minArr(a, N) << "\n";
+    cout << "Минимальный элемент массива= " << minArr(a, constants::N) << "\n";
 
     //Функция находит произведение нечетных чисел и минимальн. элемент массива. И меняет значение минимальн. элемента на произв. нечетн. чисел.
-    prArr(a, N);
+    prArr(a, constants::N);
 
     //Вывод элементов массива
-    for (int i = 0; i <= N - 1; i++)
+    for (int i = 0; i <= constants::N - 1; i++)
     {
         cout << "a" << i << "=" << a[i] << "\n";
     }
@@ -38,16 +35,16 @@ int main()
     cout << "\n Введите P "; cin >> P;
     cout << "\n Введите K "; cin >> K;
     // Ввод элементов массива
-    for (int i = 0; i <= N - 1; i++)
+    for (int i = 0; i <= constants::N - 1; i++)
     {
         cout << "\n Введите a" << i << "\n";
         cin >> a[i];
     }
     
-    s = sumArr(a, N, K);
+    s = sumArr(a, constants::N, K);
     cout << "Сумма " << s << "\n";
 
-    pr = prfArr(a, N, P);
+    pr = prfArr(a, constants::N, P);
     cout << "Произведение "<<pr<<"\n";
     
     if (pr > s)

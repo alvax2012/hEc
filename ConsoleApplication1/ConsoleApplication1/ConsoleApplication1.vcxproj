@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
-    <ClCompile Include="const.cpp" />
     <ClCompile Include="unit1.cpp" />
   </ItemGroup>
   <ItemGroup>

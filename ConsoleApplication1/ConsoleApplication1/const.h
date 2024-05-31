@@ -4,7 +4,7 @@
 
 namespace constants
 {
-	extern const int N;
+    //Константа задающая длину массива
+    constexpr int N{ 4 };
 }
-
 #endif

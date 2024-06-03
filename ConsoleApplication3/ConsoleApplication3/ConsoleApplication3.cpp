@@ -2,11 +2,19 @@
 //
 
 #include <iostream>
+#include "unit1.h"
 using namespace std;
 
 int main()
 {
-    int p, k, pr, s;
+    
+    int n=777;
+    int a[2]=()
+    prArr(n);
+    cout << "n=" << n << "\n";
+
+    //void prArr();
+    
 
     //std::cout << "\n Введите P "; std::cin >> p;
 

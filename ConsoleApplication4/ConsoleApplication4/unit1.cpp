@@ -1,7 +1,24 @@
 #include <iostream> 
 #include "unit1.h"
+#include "const.h"
 
 using namespace std;
+
+
+
+int minArr(int a[], int n)
+{
+    int min = a[0];
+    for (int i = 0; i <= n - 1; i++)
+    {
+        if (a[i] < min)
+        {
+            min = a[i];
+        }
+    }
+    return min;
+}
+
 
 //Функция находит минимальный элемент массива
 int minArr(int a[], int n)
@@ -17,7 +34,7 @@ int minArr(int a[], int n)
     return min;
 }
 //Функция находит произведение нечетных чисел и минимальн. элемент массива. И меняет значение минимальн. элемента на произв. нечетн. чисел.
-void prArr(int* a, int n)
+void prArr(int(&a)[constants::N], int n)
 {
     int m=0;
     int min=a[0];

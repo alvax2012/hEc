@@ -1,86 +1,121 @@
 #include <iostream> 
 #include "unit1.h"
-#include "const.h"
 
 using namespace std;
 
 
-
-double func11(double x)
+//Функция к заданию 11
+double fn11(double x)
 {
-    switch (x)
+    if (x < 5)
     {
-    case 1:
-        std::cout << "x = 1" << "\n";
-        break;
-    case 2:
-        std::cout << "x = 2" << "\n";
-        break;
-    case 3:
-        std::cout << "x = 3" << "\n";
-        break;
-    default:
-        std::cout << "x is undefined" << "\n";
-        break;
+        return x;
     }
 
-    return min;
+    if ((x >= 5) && (x <= 10))
+    {
+        return pow(x, 2);
+    }
+
+    if (x > 10)
+    {
+        return pow(x, 3);
+
+    }
 }
 
-
-//Функция находит минимальный элемент массива
-int minArr(int a[], int n)
+//Функция к заданию 12
+double fn12(double x)
 {
-    int min=a[0];
-    for (int i = 0; i <= n - 1; i++)
+    if (x <= 2)
     {
-        if (a[i] < min)
-        {
-            min = a[i];
-        }
+        return x-1;
     }
-    return min;
+
+    if ((x > 2) && (x <= 3))
+    {
+        return pow(x, 2) + 2;
+    }
+
+    if (x > 3)
+    {
+        return pow(x, 3) + 3;
+
+    }
 }
-//Функция находит произведение нечетных чисел и минимальн. элемент массива. И меняет значение минимальн. элемента на произв. нечетн. чисел.
-void prArr(int(&a)[constants::N], int n)
+//Функция к заданию 23
+void fn23()
 {
-    int m=0;
-    int min=a[0];
-    int pr=1;
+    double a[10], y, x;
+    int i = 0;
+    for (int x = 30; x <= 90; x += 15)
+    {
+        a[i] = x;
+        i = i + 1;
+    }
+    int n = i;
+
+
+    int s = 0;
     for (int i = 0; i <= n - 1; i++)
     {
-        if (a[i] < min)
-        {
-            min = a[i];
-            m = i;
-        }
-
-        if (a[i] % 2 != 0)
-        {
-            pr = pr * a[i];
-        }
+        s = s + pow(i + 1, 2);
     }
-    a[m] = pr;
-    cout << "Произведение нечетн. =" << pr << "\n";
+    cout << "s=" << s <<  "\n";
+
+    int p = 1;
+    for (int i = 1; i <= n - 1; i++)
+    {
+        p = p * (i - 3);
+    }
+    cout << "p=" << p << "\n";
+
+    for (int i = 0; i <= n-1; i++)
+    {
+        x = ((a[i]-1) / 180) * 3.14;
+        y = pow(sin(x-1), 2);
+
+        cout << "x=" << x << "  Sin(x-1)^2 = " << y << "\n";
+    }
+
+}
+
+//Функция к заданию 24
+void fn24()
+{
+    double a[10],y;
+    int i = 0;
+    for (int x = 3; x <= 20; x += 2)
+    {
+        a[i] = x;
+        i = i + 1;
+    }
+    int n = i;
+
+    int s = 0;
+    for (int i = 0; i <= n - 1; i++)
+    {
+        s = s + pow(i, 3);
+    }
+    s = 3 * s;
+    cout << "s=" << s << "\n";
+
+    int p = 1;
+    for (int i = 1; i <= n - 1; i++)
+    {
+        p = p * pow(a[i],i);
+    }
+    cout << "p=" << p << "\n";
+
+
+    for (int i = 1; i <= n - 1; i++)
+    {
+        y = log(pow(a[i], 2));
+        cout << "log(x^2)=" << y << "\n";
+    }
     
+
+
 }
-//Функция находит сумму K последних элементов массива
-int sumArr(int a[], int n, int k)
-{
-    int s=0;
-    for (int i = n - k; i <= n - 1; i++)
-    {
-        s = s + a[i];
-    }  
-    return s;
-}
-//Функция находит произведение первых P элементов массива
-int prfArr(int a[], int n, int p)
-{
-    int pr=1;
-    for (int i = 0; i <= p - 1; i++)
-    {
-        pr = pr * a[i];
-    }
-    return pr;
-}
+
+

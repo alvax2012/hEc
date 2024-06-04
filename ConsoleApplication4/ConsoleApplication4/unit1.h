@@ -1,7 +1,6 @@
 #pragma once
-#include "const.h"
 
-int sumArr(int a[], int n, int k);
-int prfArr(int a[], int n, int p);
-int minArr(int a[], int n);
-void prArr(int(&a)[constants::N], int n);
+double fn11(double x);
+double fn12(double x);
+void fn23();
+void fn24();

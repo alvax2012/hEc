@@ -131,7 +131,6 @@
     <ClCompile Include="unit1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="const.h" />
     <ClInclude Include="unit1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

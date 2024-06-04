@@ -6,16 +6,24 @@ using namespace std;
 
 
 
-int minArr(int a[], int n)
+double func11(double x)
 {
-    int min = a[0];
-    for (int i = 0; i <= n - 1; i++)
+    switch (x)
     {
-        if (a[i] < min)
-        {
-            min = a[i];
-        }
+    case 1:
+        std::cout << "x = 1" << "\n";
+        break;
+    case 2:
+        std::cout << "x = 2" << "\n";
+        break;
+    case 3:
+        std::cout << "x = 3" << "\n";
+        break;
+    default:
+        std::cout << "x is undefined" << "\n";
+        break;
     }
+
     return min;
 }
 

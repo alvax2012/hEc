@@ -7,10 +7,11 @@ using namespace std;
 
 int main()
 {
-    
-    int n=777;
-    int a[2]=()
-    prArr(n);
+    /*int k;
+    int* n = &k;*/
+    int n = 777;
+    //int a[2]=()
+    prArr2(n);
     cout << "n=" << n << "\n";
 
     //void prArr();

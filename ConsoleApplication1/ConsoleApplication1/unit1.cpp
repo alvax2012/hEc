@@ -18,7 +18,7 @@ int minArr(int a[], int n)
     return min;
 }
 //Функция находит произведение нечетных чисел и минимальн. элемент массива. И меняет значение минимальн. элемента на произв. нечетн. чисел.
-void prArr(int(&a)[constants::N], int n)
+void prArr(int(& a)[constants::N], int n)
 {
     int m=0;
     int min=a[0];
